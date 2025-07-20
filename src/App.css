@@ -1,82 +1,66 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 body {
-  background: linear-gradient(to right, #a18cd1, #fbc2eb);
+  margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background: #e8f0fe;
 }
 
-.app {
-  background: white;
+.counter-container {
+  text-align: center;
+  margin-top: 100px;
   padding: 30px;
-  border-radius: 16px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  width: 90%;
   max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
-  text-align: center;
   margin-bottom: 20px;
-  color: #5e3f94;
+  color: #333;
 }
 
-.input-container {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 20px;
+.display {
+  font-size: 60px;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 30px;
 }
 
-input {
-  flex: 1;
-  padding: 10px;
-  border: 2px solid #d8b4fe;
-  border-radius: 8px;
-  outline: none;
-}
-
-button {
-  background-color: #8e44ad;
-  color: white;
+.buttons button {
+  margin: 0 10px;
+  padding: 12px 20px;
+  font-size: 16px;
   border: none;
-  padding: 10px 15px;
-  border-radius: 8px;
+  border-radius: 6px;
   cursor: pointer;
-  transition: background-color 0.2s ease-in;
+  transition: all 0.3s ease;
 }
 
-button:hover {
-  background-color: #732d91;
+.inc {
+  background-color: #28a745;
+  color: white;
 }
 
-.todo-list {
-  list-style: none;
+.inc:hover {
+  background-color: #218838;
 }
 
-.todo-list li {
-  background: #f5f5f5;
-  padding: 12px;
-  margin-bottom: 10px;
-  border-radius: 8px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  transition: all 0.2s ease;
+.dec {
+  background-color: #dc3545;
+  color: white;
 }
 
-.todo-list li span {
-  cursor: pointer;
+.dec:hover {
+  background-color: #c82333;
 }
 
-.todo-list li.completed span {
-  text-decoration: line-through;
-  color: gray;
-  opacity: 0.7;
+.reset {
+  background-color: #6c757d;
+  color: white;
+}
+
+.reset:hover {
+  background-color: #5a6268;
 }
